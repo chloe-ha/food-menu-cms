@@ -4,9 +4,9 @@ const data = {
       'https://offloadmedia.feverup.com/secretnyc.co/wp-content/uploads/2023/02/25080942/AF_SOOTHR_22.jpeg',
       'https://www.healthyfoodcreation.fr/wp-content/uploads/2023/04/pad-thai-1.jpg',
     ],
-    name: 'Viethai',
+    name: 'Un resto',
     description: 'This is a restaurant',
-    address: '6 rue du Moulin Joli', // Google API
+    address: '12 Place de la Nourriture', // Google API
     openingHours: [
       { day: "Lundi", open: true, windows: [{ from: "12:00", to: "15:00" }] },
       { day: "Mardi", open: true, windows: [] },
@@ -16,11 +16,12 @@ const data = {
       { day: "Samedi", open: true, windows: [{ from: "12:00", to: "15:00" }, { from: "18:00", to: "22:00" }] },
       { day: "Dimanche", open: false, windows: [] },
     ],
-    phoneNumber: "+32612121212",
+    phoneNumber: "+33612121212",
   },
   menus: [
     {
       name: "Entrées",
+      uriFragment: "entrees",
       items: [
         { name: "Nems", price: 690, image: 'a' },
         { name: "Crêpes", price: 1390, image: 'a' },
@@ -29,6 +30,7 @@ const data = {
     },
     {
       name: "Soupes",
+      uriFragment: "soupes",
       items: [
         { name: "Pho Spécial", price: 1690, image: 'a' },
         { name: "Pho pas Spécial", price: 1390, image: 'a' },
@@ -37,7 +39,23 @@ const data = {
     },
     {
       name: "Plats",
+      uriFragment: "plats",
       items: [
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
+        { name: "Pad Thai", price: 1290, image: 'a' },
         { name: "Pad Thai", price: 1290, image: 'a' },
         { name: "Pad Thai", price: 1290, image: 'a' },
         { name: "Pad Thai", price: 1290, image: 'a' },
@@ -45,13 +63,21 @@ const data = {
     },
     {
       name: "Salades",
+      uriFragment: "salades",
       items: [
         { name: "Salade mangue", price: 1190 },
       ],
     },
     {
       name: "Boissons",
+      uriFragment: "boissons",
       items: [
+        { name: "Coca/Fanta/??", price: 250 },
+        { name: "Thé", price: 250 },
+        { name: "Coca/Fanta/??", price: 250 },
+        { name: "Thé", price: 250 },
+        { name: "Coca/Fanta/??", price: 250 },
+        { name: "Thé", price: 250 },
         { name: "Coca/Fanta/??", price: 250 },
         { name: "Thé", price: 250 },
       ],
